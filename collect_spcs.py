@@ -41,11 +41,11 @@ for path in filepaths:
       i = xs.index(row[0])
       row.append(ys[i])
     except:
-      row.append("")
+      row.append('')
 
 # Export CSV file
 print(f'Exporting {OUTPATH}')
-with open(OUTPATH, 'w', newline="") as f:
+with open(OUTPATH, 'w', newline='') as f:
   writer = csv.writer(f)
   writer.writerow(titles)
   writer.writerows(write_rows)
